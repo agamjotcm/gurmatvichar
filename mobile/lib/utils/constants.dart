@@ -5,13 +5,14 @@ import 'package:flutter/material.dart';
 class Constants {
   static const regularText = (
     fontSize: 23,
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w100,
     color: Colors.white,
   );
   static const regularHeading = TextStyle(
     fontSize: 18,
     color: Color(0xfffa374b8),
-    fontWeight: FontWeight.w900,
+    fontWeight: FontWeight.bold,
+    
   );
   static const bigHeading = TextStyle(
     fontSize: 17,

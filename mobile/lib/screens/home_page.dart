@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:mobile/utils/constants.dart';
+import 'package:mobile/utils/kirtan_card.dart';
+import 'package:mobile/utils/slider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,6 +29,9 @@ class _HomePageState extends State<HomePage> {
           child: ListView(
             padding: EdgeInsets.all(10),
             children: [
+              SizedBox(
+                height: 10,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -33,9 +39,16 @@ class _HomePageState extends State<HomePage> {
                     "Live Now",
                     style: Constants.regularHeading,
                   ),
-                  Icon(Icons.settings)
+                  Icon(
+                    Icons.settings,
+                    color: Color(0xfffa374b8),
+                  )
                 ],
-              )
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              SliderCard(),
             ],
           ),
         ),
